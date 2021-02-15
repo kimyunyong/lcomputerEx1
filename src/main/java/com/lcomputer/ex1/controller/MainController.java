@@ -60,6 +60,7 @@ public class MainController {
 	
 	@RequestMapping(value="/login")
 	public String beforeLogin(Model model) {
+		
 		return "/login";
 	}
 	
