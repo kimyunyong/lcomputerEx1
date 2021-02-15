@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lcomputer.ex1.mapper.BoardMapper">
+	<select id="selectBoardList" resultType="Board">
+		SELECT      B_ID AS BID,
+		            B_TITLE AS BTITLE,
+		            B_CONTENT AS BCONTENT,
+		            B_WRITER AS BWRITER
+		            
+		FROM		LC_BOARD
+	</select>
+</mapper>
